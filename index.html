@@ -28,12 +28,38 @@
             <header class="header">
                 <div class="grid">
                     <nav class="header__navbar">
-                        <!-- Nav left -->
+                        <!-- Start: Nav Left -->
                         <ul class="header__navbar-list">
                             <li
-                                class="header__navbar-item header__navbar-item--separate"
+                                class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate"
                             >
                                 Vào cửa hàng trên ứng dụng F8-Shop
+
+                                <!-- Start: Header QR Code -->
+                                <div class="header__qr">
+                                    <img
+                                        src="./assets/img/qr_code.png"
+                                        alt="QR code"
+                                        class="header__qr-img"
+                                    />
+                                    <div class="header__qr-apps">
+                                        <a href="" class="header__qr-link">
+                                            <img
+                                                src="./assets/img/google_play.png"
+                                                alt="Google Play"
+                                                class="header__qr-download-img"
+                                            />
+                                        </a>
+                                        <a href="" class="header__qr-link"
+                                            ><img
+                                                src="./assets/img/app_store.png"
+                                                alt="App Store"
+                                                class="header__qr-download-img"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- End: Header QR Code -->
                             </li>
                             <li class="header__navbar-item">
                                 <span class="header__navbar-title--no-pointer"
@@ -51,8 +77,9 @@
                                 </a>
                             </li>
                         </ul>
+                        <!-- End: Nav Left -->
 
-                        <!-- Nav right -->
+                        <!-- Start: Nav Right -->
                         <ul class="header__navbar-list">
                             <li class="header__navbar-item">
                                 <a href="" class="header__navbar-item-link">
@@ -81,6 +108,7 @@
                                 Đăng nhập
                             </li>
                         </ul>
+                        <!-- End: Nav Right -->
                     </nav>
                 </div>
             </header>
