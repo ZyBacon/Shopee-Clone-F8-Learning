@@ -137,6 +137,14 @@ header {
     width: 404px;
     border: 1px solid #d3d3d3;
     background-color: var(--white-color);
+    cursor: default;
+    transform-origin: calc(100% - 20px) top;
+    animation: headerNotifyGrowth ease-in 0.2s;
+    display: none;
+}
+
+.header__navbar-item--has-notify:hover .header__notify {
+    display: block;
 }
 
 .header__notify-header {
@@ -150,6 +158,7 @@ header {
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 40px;
+    user-select: none;
 }
 
 .header__notify-list {
@@ -186,8 +195,8 @@ header {
 .header__notify-name {
     display: block;
     font-size: 1.4rem;
-    color: var(--black-color);
-    line-height: 1.4rem;
+    color: var(--text-color);
+    line-height: 1.8rem;
     font-weight: 400;
     margin-bottom: 8px;
 }
@@ -197,15 +206,19 @@ header {
     font-size: 1.2rem;
     line-height: 1.6rem;
     color: #756f6e;
+    margin-top: 4px;
 }
 
 .header__notify-footer {
-    text-align: center;
+    display: flex;
 }
 
 .header__notify-footer-btn {
     text-decoration: none;
     color: var(--text-color);
-    padding: 16px 16px;
-    display: block;
+    padding: 8px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
 }
