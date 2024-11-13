@@ -129,7 +129,6 @@ header {
 }
 
 /* Header Notification */
-
 .header__notify {
     position: absolute;
     top: 118%;
@@ -141,6 +140,26 @@ header {
     transform-origin: calc(100% - 20px) top;
     animation: headerNotifyGrowth ease-in 0.2s;
     display: none;
+}
+
+.header__notify::before {
+    content: "";
+    border-width: 20px 26px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 4px;
+    top: -28px;
+}
+
+.header__notify::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 20px;
+    right: 0;
+    top: -16px;
+    width: 90px;
 }
 
 .header__navbar-item--has-notify:hover .header__notify {
