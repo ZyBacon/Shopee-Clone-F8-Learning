@@ -139,6 +139,7 @@ header {
     cursor: default;
     transform-origin: calc(100% - 20px) top;
     animation: headerNotifyGrowth ease-in 0.2s;
+    will-change: opacity, transform; /* Thuộc tính gì sẽ thay đổi đối tượng này */
     display: none;
 }
 
