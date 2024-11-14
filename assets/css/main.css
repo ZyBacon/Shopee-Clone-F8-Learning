@@ -62,7 +62,7 @@ header {
     right: -10px;
     transform: translateY(
         -50%
-    ); /* Thay đổi theo chiều cao của bản thân 12px -> 6px */
+    ); /* Di chuyển theo chiều cao của bản thân 16px -> Di chuyển 8px */
 }
 
 .header__navbar-icon-link {
@@ -261,6 +261,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 12px;
 }
 
 .auth-form__heading {
@@ -367,4 +369,27 @@ header {
 .auth-form__socials--google {
     color: #666 !important;
     background-color: var(--white-color) !important;
+}
+
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.auth-form__help-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #939393;
+}
+
+.auth-form__help-separate {
+    display: block;
+    height: 16px;
+    border-left: 1px solid #eaeaea;
+    margin: 0px 16px;
+}
+
+.auth-form__help-forgot {
+    color: var(--primary-color);
 }
