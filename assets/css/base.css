@@ -71,25 +71,45 @@ html {
 }
 
 .modal__body {
-    background-color: var(--white-color);
     margin: auto;
     position: relative;
     z-index: 1;
-    border-radius: 5px;
 }
 
 /* Button style */
 .btn {
     min-width: 142px;
-    height: 36px;
+    height: 34px;
     text-decoration: none;
     border: none;
     border-radius: 2px;
     font-size: 1.4rem;
-    padding: 0;
+    padding: 0 12px;
+    outline: none;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn-normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.btn.btn--size-s {
+    height: 32px;
+    font-size: 1.2rem;
+    padding: 0 8px;
 }
 
 .btn.btn--primary {
     color: var(--white-color);
     background-color: var(--primary-color);
+}
+
+.btn.btn--disabled {
+    cursor: default;
+    opacity: 0.5 !important;
 }
