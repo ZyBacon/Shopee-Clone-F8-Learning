@@ -1,5 +1,5 @@
 header {
-    height: 120px;
+    height: var(--header-height);
     background-image: linear-gradient(0, #fe6433, #f53e2d);
 }
 
@@ -11,7 +11,7 @@ header {
 .header__navbar-list {
     list-style-type: none;
     padding-left: 0;
-    /* margin-top: 4px; */
+    margin: 4px 0 0 0;
 }
 
 .header__navbar-item {
@@ -392,4 +392,38 @@ header {
 
 .auth-form__help-forgot {
     color: var(--primary-color);
+}
+
+/* Header with search */
+.header-with-search {
+    height: var(--header-with-search-height);
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    width: 220px;
+}
+
+.header__logo-img {
+    width: 150px;
+}
+
+.header__search {
+    flex: 1;
+    height: 40px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+}
+
+.header__cart {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__cart-icon {
+    font-size: 2.4rem;
+    color: var(--white-color);
 }
