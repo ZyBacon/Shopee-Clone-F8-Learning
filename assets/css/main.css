@@ -429,9 +429,68 @@ header {
     justify-content: center;
 }
 
+.header__cart-wrap {
+    position: relative;
+    display: inline-block;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
 .header__cart-icon {
     font-size: 2.4rem;
     color: var(--white-color);
+}
+
+.header__cart-wrap:hover .header__cart-list {
+    display: block;
+}
+
+.header__cart-list {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0px;
+    background-color: var(--white-color);
+    width: 400px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: none;
+    animation: fadeIn ease-in 0.2s;
+}
+
+.header__cart-list::before {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 24px;
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+.header__cart-list::after {
+    content: "";
+    position: absolute;
+    right: 4px;
+    top: -26px;
+    border-width: 16px 20px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+}
+
+.header__cart-list--no-cart {
+    padding: 24px 0px;
+}
+
+.header__cart-no-cart-img {
+    width: 50%;
+}
+
+.header__cart-list-no-cart-msg {
+    font-size: 1.4rem;
+    display: block;
+    margin-top: 14px;
+    color: var(--text-color);
 }
 
 .header__search-input-wrap {
@@ -592,7 +651,7 @@ header {
 
 .header__search-history-item:hover {
     background-color: #fafafa;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .header__search-history-item a {
@@ -600,4 +659,5 @@ header {
     line-height: 38px;
     color: var(--text-color);
     text-decoration: none;
+    display: block;
 }
