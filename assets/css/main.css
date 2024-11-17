@@ -459,6 +459,100 @@ header {
     cursor: default;
 }
 
+.header__cart-list-item {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.header__cart-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.header__cart-item:hover {
+    background-color: #f8f8f8;
+}
+
+.header__cart-img {
+    width: 48px;
+    height: 100%;
+    object-fit: contain;
+    border: 1px solid var(--border-color);
+}
+
+.header__cart-heading {
+    height: 36px;
+}
+
+.header__cart-heading h4 {
+    line-height: 36px;
+    text-align: left;
+    margin: 0 0 0 12px;
+    font-size: 1.4rem;
+    color: #999;
+    font-weight: 400;
+    user-select: none;
+}
+
+.header__cart-item-info {
+    width: 100%;
+    margin-left: 12px;
+}
+
+.header__cart-item-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.header__cart-item-name {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.header__cart-item-price {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.header__cart-item-multiply {
+    font-size: 0.9rem;
+    margin: 0 4px;
+    color: #757575;
+}
+
+.header__cart-item-quantity {
+    color: #757575;
+    font-size: 1.2rem;
+}
+
+.header__cart-item-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__cart-item-description {
+    color: #757575;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.header__cart-item-remove {
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+
+.header__cart-item-remove:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
 .header__cart-list::before {
     content: "";
     display: block;
@@ -467,6 +561,16 @@ header {
     position: absolute;
     top: -20px;
     right: 0;
+}
+
+.header__cart-view-cart {
+    float: right;
+    margin: 12px 12px 12px 0;
+}
+
+.header__cart-view-cart:hover {
+    background-color: #f05d41 !important;
+    cursor: pointer;
 }
 
 .header__cart-list::after {
@@ -655,16 +759,23 @@ header {
 }
 
 .header__search-history-heading {
-    margin: 10px 12px;
-    font-size: 1.4rem;
+    height: 36px;
+}
+
+.header__search-history-heading h3 {
     color: #999;
+    margin: 0 12px 0 12px;
     font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 36px;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .header__search-history-list {
     padding-left: 0;
     list-style-type: none;
-    margin: 6px 0 0;
+    margin: 0;
 }
 
 .header__search-history-item {
