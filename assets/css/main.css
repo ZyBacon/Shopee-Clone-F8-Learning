@@ -456,6 +456,7 @@ header {
     text-align: center;
     display: none;
     animation: fadeIn ease-in 0.2s;
+    cursor: default;
 }
 
 .header__cart-list::before {
@@ -476,21 +477,43 @@ header {
     border-width: 16px 20px;
     border-style: solid;
     border-color: transparent transparent var(--white-color) transparent;
+    cursor: pointer;
 }
 
 .header__cart-list--no-cart {
     padding: 24px 0px;
 }
 
+.header__cart-list--no-cart .header__cart-no-cart-img,
+.header__cart-list--no-cart .header__cart-list-no-cart-msg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header__cart-no-cart-img {
     width: 50%;
+    display: none;
 }
 
 .header__cart-list-no-cart-msg {
     font-size: 1.4rem;
-    display: block;
+    display: none;
     margin-top: 14px;
     color: var(--text-color);
+}
+
+.header__cart-notice {
+    position: absolute;
+    top: -11px;
+    right: -2px;
+    padding: 1px 7px;
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    border-radius: 10px;
+    border: 2px solid #ee4d2d;
 }
 
 .header__search-input-wrap {
