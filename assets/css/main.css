@@ -20,6 +20,10 @@ header {
     min-height: 26px;
 }
 
+.header__navbar-user-item--seperate {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 .header__navbar-user {
     display: flex;
     justify-content: center;
@@ -38,7 +42,7 @@ header {
 }
 
 .header__navbar-user-name {
-    margin-left: 8px;
+    margin-left: 4px;
     font-size: 1.4rem;
     font-weight: 400;
 }
@@ -55,7 +59,7 @@ header {
     background-color: var(--white-color);
     box-shadow: 0 1px 2px #ccc;
     display: none;
-    transform-origin: calc(100% - 20px) top;
+    transform-origin: calc(100% - 32px) top;
     animation: headerNotifyGrowth ease-in 0.2s;
 }
 
@@ -87,7 +91,7 @@ header {
     text-decoration: none;
     color: var(--text-color);
     font-size: 1.4rem;
-    padding: 8px 16px;
+    padding: 10px 16px;
     display: block;
     font-weight: 400;
 }
@@ -114,7 +118,7 @@ header {
 .header__navbar-item,
 .header__navbar-item-link {
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
@@ -155,6 +159,10 @@ header {
 .header__navbar-icon-link {
     color: var(--white-color);
     text-decoration: none;
+}
+
+.header__navbar-icon-link:nth-child(2) {
+    margin-left: 3px;
 }
 
 .header__navbar-icon {
@@ -221,10 +229,11 @@ header {
     top: 118%;
     right: 0;
     width: 404px;
-    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--white-color);
     cursor: default;
-    transform-origin: calc(100% - 20px) top;
+    transform-origin: calc(100% - 32px) top;
     animation: headerNotifyGrowth ease-in 0.2s;
     will-change: opacity, transform; /* Thuộc tính gì sẽ thay đổi đối tượng này */
     display: none;
@@ -496,6 +505,11 @@ header {
     width: 220px;
 }
 
+.header__logo-link {
+    text-decoration: none;
+    color: transparent;
+}
+
 .header__logo-img {
     width: 150px;
 }
@@ -596,10 +610,12 @@ header {
 }
 
 .header__cart-item-name {
+    text-align: left;
     font-size: 1.4rem;
     font-weight: 500;
     color: var(--text-color);
     margin: 0;
+    line-height: 1.8rem;
 }
 
 .header__cart-item-price {
@@ -772,7 +788,7 @@ header {
 
 .header__search-option {
     position: absolute;
-    top: 140%;
+    top: 126%;
     right: 0;
     width: 130px;
     list-style-type: none;
