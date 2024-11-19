@@ -862,7 +862,7 @@ header {
 }
 
 .header__search-history-heading {
-    height: 36px;
+    height: 30px;
 }
 
 .header__search-history-heading h3 {
@@ -870,7 +870,7 @@ header {
     margin: 0 12px 0 12px;
     font-weight: 400;
     font-size: 1.4rem;
-    line-height: 36px;
+    line-height: 30px;
     -webkit-user-select: none;
     user-select: none;
 }
