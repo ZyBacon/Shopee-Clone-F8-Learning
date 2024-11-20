@@ -540,20 +540,45 @@
                             </nav>
                         </div>
 
-                        <div class="grd__column-10">
+                        <div class="grid__column-10">
                             <div class="home-filter">
                                 <span class="home-filter__label"
                                     >Sắp xếp theo</span
                                 >
-                                <button class="btn">Phổ biến</button>
-                                <button class="btn btn--primary">
+                                <button class="home-filter__btn btn">
+                                    Phổ biến
+                                </button>
+                                <button
+                                    class="home-filter__btn btn btn--primary"
+                                >
                                     Mới nhất
                                 </button>
-                                <button class="btn">Bán chạy</button>
+                                <button class="home-filter__btn btn">
+                                    Bán chạy
+                                </button>
 
                                 <div class="select-input">
                                     <span class="select-input__label">Giá</span>
-                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <i
+                                        class="select-input__icon fa-solid fa-chevron-down"
+                                    ></i>
+                                    <!-- List options -->
+                                    <ul class="select-input__list">
+                                        <li class="select-input__item">
+                                            <a
+                                                href=""
+                                                class="select-input__link"
+                                                >Giá: Thấp đến cao</a
+                                            >
+                                        </li>
+                                        <li class="select-input__item">
+                                            <a
+                                                href=""
+                                                class="select-input__link"
+                                                >Giá: Cao đến thấp</a
+                                            >
+                                        </li>
+                                    </ul>
                                 </div>
 
                                 <div class="home-filter__page">
@@ -566,10 +591,10 @@
                                     <div class="home-filter__page-control">
                                         <a
                                             href=""
-                                            class="home-filter__page-btn"
+                                            class="home-filter__page-btn home-filter__page-btn--disabled"
                                         >
                                             <i
-                                                class="fa-solid fa-chevron-left"
+                                                class="home-filter__page-icon fa-solid fa-chevron-left"
                                             ></i>
                                         </a>
                                         <a
@@ -577,7 +602,7 @@
                                             class="home-filter__page-btn"
                                         >
                                             <i
-                                                class="fa-solid fa-chevron-right"
+                                                class="home-filter__page-icon fa-solid fa-chevron-right"
                                             ></i>
                                         </a>
                                     </div>
