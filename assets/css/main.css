@@ -1055,7 +1055,7 @@ header {
     font-weight: 400;
     color: var(--text-color);
     line-height: 1.8rem;
-    margin: 10px 10px 8px;
+    margin: 8px 10px;
     height: 3.6rem;
     overflow: hidden;
     /* Cách tạo dấu ... khi text quá nhiều, cách này áp dụng nhiều dòng */
@@ -1090,12 +1090,13 @@ header {
 
 .home-product-item__action {
     display: flex;
+    /* align-items: center; */
     justify-content: space-between;
-    margin: 8px 10px 0;
+    margin: 8px 10px;
 }
 
 .home-product-item__like {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .home-product-item__like--liked .home-product-item__like-icon-fill {
@@ -1115,9 +1116,27 @@ i.home-product-item__like-icon-fill {
     font-size: 1rem;
     transform: scale(0.8);
     transform-origin: right;
+    color: #d5d5d5;
+    margin: -1px 0 0 auto;
+}
+
+.home-product-item__star--gold {
+    color: var(--star-gold-color);
+}
+
+.home-product-item__sold {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-left: 8px;
 }
 
 .home-product-item__origin {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 10px;
+    color: #595959;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .home-product-item__brand {
