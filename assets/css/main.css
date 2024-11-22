@@ -1041,6 +1041,7 @@ header {
 .home-product-item {
     margin-top: 10px;
     background-color: var(--white-color);
+    position: relative;
 }
 
 .home-product-item__img {
@@ -1146,6 +1147,38 @@ i.home-product-item__like-icon-fill {
 }
 
 .home-product-item__favourite {
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    color: var(--primary-color);
+    background-color: currentColor;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding-right: 4px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.home-product-item__favourite::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    /* Bí kíp làm banner gập vào 1 góc */
+    border-top: 3px solid currentColor;
+    border-left: 3px solid transparent;
+    filter: brightness(60%);
+}
+
+.home-product-item__favourite span {
+    color: var(--white-color);
+}
+
+.home-product-item__favourite i {
+    color: var(--white-color);
+    font-size: 0.9rem;
+    margin: 0 2px 0 5px;
 }
 
 .home-product-item__sale-off {
