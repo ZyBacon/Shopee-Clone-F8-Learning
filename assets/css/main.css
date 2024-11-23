@@ -186,6 +186,8 @@ header {
     border-radius: 2px;
     display: none;
     animation: fadeIn ease-in 0.3s;
+    z-index: 1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* Bắt cầu nối giữa qr với text */
@@ -558,12 +560,15 @@ header {
     display: none;
     animation: fadeIn ease-in 0.2s;
     cursor: default;
+    z-index: 1;
 }
 
 .header__cart-list-item {
     padding-left: 0;
     margin: 0;
     list-style-type: none;
+    max-height: 56vh;
+    overflow-y: auto;
 }
 
 .header__cart-item {
@@ -615,7 +620,15 @@ header {
     font-weight: 500;
     color: var(--text-color);
     margin: 0;
-    line-height: 1.8rem;
+    line-height: 2rem;
+    max-height: 4rem;
+    overflow: hidden;
+    flex: 1;
+    padding-right: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
 }
 
 .header__cart-item-price {
@@ -797,6 +810,7 @@ header {
     border-radius: 2px;
     display: none;
     animation: fadeIn ease-in 0.2s;
+    z-index: 1;
 }
 
 .header__search-option::before {
@@ -859,6 +873,7 @@ header {
     box-shadow: 0 1px 5px rgb(189, 189, 189);
     display: none;
     overflow: hidden;
+    z-index: 1;
 }
 
 .header__search-history-heading {
@@ -915,12 +930,11 @@ header {
 
 .category__heading {
     color: var(--text-color);
-    font-size: 1.6rem;
-    padding: 12px 16px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 16px 16px 0;
     margin-top: 0;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    text-transform: uppercase;
 }
 
 .category__heading-icon {
@@ -931,12 +945,24 @@ header {
 .category-list {
     padding: 0 0 8px 0;
     list-style-type: none;
-    margin-left: 9px;
 }
 
 .category-item {
+    position: relative;
 }
 
+.category-item:first-child::before {
+    display: none;
+}
+
+.category-item::before {
+    content: "";
+    border-top: 1px solid #e1e1e1;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+}
 .category-item--actived .category-item__link {
     color: var(--primary-color);
 }
@@ -944,7 +970,7 @@ header {
 .category-item--actived .category-item__link::before {
     content: "";
     top: 50%;
-    left: 7px;
+    left: 9px;
     position: absolute;
     border: 4px solid;
     transform: translateY(calc(-50% - 1px));
@@ -957,7 +983,7 @@ header {
     font-size: 1.4rem;
     text-decoration: none;
     color: var(--text-color);
-    padding: 4px 16px;
+    padding: 8px 20px;
     display: block;
     transition: right linear 0.1s;
 }
@@ -1048,8 +1074,7 @@ header {
     text-decoration: none;
     background-color: var(--white-color);
     position: relative;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-radius: 2px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     transition: transform ease-in 0.1s;
     will-change: transform;
@@ -1064,7 +1089,9 @@ header {
     padding-top: 100%; /* khi sử dụng padding top dc hiểu là tỉ lệ tương đối với thằng chứa nó */
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: top center;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 
 .home-product-item__name {
@@ -1205,6 +1232,7 @@ i.home-product-item__like-icon-fill {
     height: 36px;
     background-color: rgba(255, 217, 64, 0.94);
     text-align: center;
+    border-top-right-radius: 2px;
 }
 
 .home-product-item__sale-off::before {

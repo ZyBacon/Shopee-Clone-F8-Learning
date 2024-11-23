@@ -195,6 +195,7 @@ html {
     padding: 4px 16px;
     list-style-type: none;
     display: none;
+    z-index: 1;
 }
 
 .select-input__list::before {
