@@ -1267,3 +1267,7 @@ i.home-product-item__like-icon-fill {
     justify-content: center;
     top: 6px;
 }
+
+.home-product__pagination {
+    margin: 48px 0 32px 0;
+}
