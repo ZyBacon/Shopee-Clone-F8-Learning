@@ -1,11 +1,31 @@
 /* Mobile & Tablet */
 @media (max-width: 1023px) {
+    :root {
+        --navbar-height: 0px;
+        --header-height: 68px;
+    }
+
+    .hide-on-mobile-tablet {
+        display: none;
+    }
 }
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .header__cart {
+        width: 80px;
+        display: block;
+        text-align: right;
+    }
 }
 
 /* Mobile */
 @media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
 }
