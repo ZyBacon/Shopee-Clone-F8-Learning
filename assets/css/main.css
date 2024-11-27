@@ -448,17 +448,7 @@ header {
 /* CSS chữ G */
 .auth-form__socials--google .auth-form__socials-icon {
     color: transparent;
-    background: conic-gradient(
-        red 0deg,
-        red 45deg,
-        blue 45deg,
-        blue 135deg,
-        green 135deg,
-        green 225deg,
-        yellow 225deg,
-        yellow 275deg,
-        red 275deg
-    );
+    background: conic-gradient(red 0deg, red 45deg, blue 45deg, blue 135deg, green 135deg, green 225deg, yellow 225deg, yellow 275deg, red 275deg);
     border-radius: 50%;
 
     -webkit-background-clip: text;
@@ -501,6 +491,15 @@ header {
     margin: 0 8px;
 }
 
+.header__mobile-search {
+    padding: 0 12px;
+}
+
+.header__mobile-search-icon {
+    font-size: 2.6rem;
+    color: var(--white-color);
+}
+
 .header__logo {
     width: 220px;
 }
@@ -508,6 +507,12 @@ header {
 .header__logo-link {
     text-decoration: none;
     color: transparent;
+    display: block;
+    line-height: 0;
+}
+
+.header__search-checkbox:checked ~ .header__search {
+    display: flex;
 }
 
 .header__logo-img {
