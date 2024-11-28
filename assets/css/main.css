@@ -241,7 +241,7 @@ header {
     animation: headerNotifyGrowth ease-in 0.2s;
     will-change: opacity, transform; /* Thuộc tính gì sẽ thay đổi đối tượng này */
     display: none;
-    z-index: 1;
+    z-index: 2;
 }
 
 .header__notify::before {
