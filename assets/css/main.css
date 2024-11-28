@@ -497,6 +497,7 @@ header {
 
 .header__mobile-search {
     padding: 0 12px;
+    display: none;
 }
 
 .header__mobile-search-icon {
@@ -1054,6 +1055,7 @@ header {
 
 /* Mobile category */
 .mobile-category {
+    display: none;
 
 }
 
@@ -1106,6 +1108,7 @@ header {
     -webkit-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+    padding: 0 6px;
 }
 
 /* Home sort + filter */

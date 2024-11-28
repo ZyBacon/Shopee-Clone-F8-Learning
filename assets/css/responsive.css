@@ -40,6 +40,10 @@
     .app__content {
         padding-top: 8px;
     }
+
+    .mobile-category {
+        display: block;
+    }
 }
 
 /* Tablet */
@@ -104,5 +108,12 @@
     .app__content {
         margin: 0 4px ;
     }
+
+    .header__mobile-search {
+        display: block;
+    }
     
+    .header__logo-img {
+        width: 110px;
+    }
 }
