@@ -1433,9 +1433,10 @@ i.home-product-item__like-icon-fill {
 }
 
 .footer__download-qr {
-    width: 80px;
+    width: 88px;
     object-fit: contain;
-    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
 }
 
 .footer__download-apps {
@@ -1443,12 +1444,14 @@ i.home-product-item__like-icon-fill {
     margin-left: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .footer__download-app-img {
-    height: 16px;
-    margin: 4px;
+    height: 24px;
+    padding: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
 }
 
 .footer__download-app-link {
