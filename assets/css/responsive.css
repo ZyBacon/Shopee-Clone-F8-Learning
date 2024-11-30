@@ -108,6 +108,7 @@
         --height: 28px;
         font-size: 1.6rem;
         min-width: 36px;
+        -webkit-tap-highlight-color: transparent;
     }
 
     .app__content {
@@ -143,4 +144,9 @@
         display: block;
         padding: 6px 8px;
     }
+
+    .footer-list-pay, .footer-list-shipping {
+        justify-content: center;
+    }
+
 }
