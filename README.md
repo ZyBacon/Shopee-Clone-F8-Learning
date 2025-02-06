@@ -1,3 +1,7 @@
+# DISCLAIMER
+
+THIS PAGE WAS MADE AS A PERSONAL EDUCATIONAL PROJECT. This is NOT the official site of the company or brand identified on the page. The creator of this page is NOT affiliated with the company or brand in any way. This page is a personal project made in connection with an educational exercise.
+
 # Shopee Clone
 
 This repository contains a clone of the [**Shopee**](https://shopee.vn/) e-commerce website interface. The purpose of this project is to practice and enhance my skills in **HTML**, **CSS** by replicating the layout and design of a real-world platform.  
